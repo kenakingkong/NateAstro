@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default function Home() {
+export default function Poems() {
   return (
-    <Layout></Layout>
+    <Layout>
+      <h1>I'm poet</h1>
+    </Layout>
   )
 }

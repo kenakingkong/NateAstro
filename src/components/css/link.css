@@ -1,0 +1,11 @@
+.link {
+   color:#4A0D4A;
+   text-decoration: none;
+   font-family: Bowlby One;
+   font-size: calc(25px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   padding: 0 1rem;
+}
+
+.link:hover {
+   text-decoration: line-through solid #398FC7;
+}

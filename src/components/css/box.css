@@ -1,0 +1,17 @@
+.box {
+   padding: 2.5rem;
+}
+
+.box-outline {
+   border: solid 5px #4A0D4A;
+   background: transparent;
+   height: 60vh;
+   width: 300px
+}
+
+.box-image {
+   z-index: 2;
+   transform: translate(5rem, 5rem);
+   height: 60vh;
+   width: auto
+}

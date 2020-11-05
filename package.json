@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "nate-astro-poetry",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A poetry website for Thomas Kaar",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -14,16 +14,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.25.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "gatsby": "^2.25.2",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "prettier": "2.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/kenakingkong/NateAstro"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

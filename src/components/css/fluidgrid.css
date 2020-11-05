@@ -1,0 +1,9 @@
+.grid {
+   margin: 5rem;
+
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: space-between;
+   align-content: space-between;
+}

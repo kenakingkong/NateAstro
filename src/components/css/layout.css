@@ -1,0 +1,36 @@
+header,
+footer {
+   padding: 0.5rem 0.5rem;
+   position: absolute; 
+   overflow: hidden; 
+   z-index: -1;
+   background-color: transparent;
+}
+header {
+   margin: 1rem 0 0 0;
+   top: 0
+}
+
+footer {
+   margin: 0 0 1rem 0;
+   bottom: 0
+}
+
+main {
+   margin: 5rem 0;
+   padding: 0 2rem;
+   height: 80vh;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex: 1
+}
+
+.fluid {
+   margin-right: 5rem;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1
+}
