@@ -29,32 +29,32 @@ header {
 .text-largest {
    color: #398FC7;
    font-family: Bowlby One;
-   font-size: calc(35px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   font-size: calc(35px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
    padding: 0 0.5rem;
    margin: 0;
 }
 
 .text-vertical {
-   transform: rotate(270deg);
+   transform: rotate(270deg) translateY(16vw);
    color: #398FC7;
    font-family: Bowlby One;
-   font-size: calc(100px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   font-size: calc(55px + (75 - 25) * ((100vw - 300px) / (1600 - 300)));
    z-index: 5;
-   position: absolute
+   position: absolute;
+   margin: 0;
 }
 
 .blue {
    color: #398FC7;
    z-index: 1;
    margin: 0;
-   transform: translateY(29vw);
+   transform: translateY(9vw);
 }
 
 .purple {
    color:#4A0D4A;
    z-index: 2; 
-   margin: 0;
-   transform: translateY(19vw); 
+   margin: 0; 
 }
 
 .liststyle {
@@ -64,10 +64,4 @@ header {
 
 .listitem {
    list-style-type: none;
-}
-
-@media only screen and (max-width: 1026px) {
-   .text-vertical{
-       display: none;
-   }
 }

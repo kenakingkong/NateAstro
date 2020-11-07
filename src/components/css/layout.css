@@ -3,7 +3,7 @@ footer {
    padding: 0.5rem 0.5rem;
    position: absolute; 
    overflow: hidden; 
-   z-index: -1;
+   z-index: 4;
    background-color: transparent;
 }
 header {
@@ -16,21 +16,23 @@ footer {
    bottom: 0
 }
 
-main {
+
+.container {
    margin: 5rem 0;
    padding: 0 2rem;
    height: 80vh;
+   width: 100%;
+   position: absolute;
+   
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   flex: 1
+   flex: 1;
 }
 
 .fluid {
-   margin-right: 5rem;
-
+   margin: 0;
+   margin-right: 8vw;
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex: 1
+   flex: 1;
 }

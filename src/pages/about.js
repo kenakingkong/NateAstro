@@ -5,7 +5,7 @@ import Social from "../components/social"
 import Acrostic from "../components/acrostic"
 import Summary from "../components/summary"
 
-export default function About() {
+const About = () => {
   return (
     <Layout>
       <FluidGrid
@@ -16,3 +16,5 @@ export default function About() {
     </Layout>
   )
 }
+
+export default About;

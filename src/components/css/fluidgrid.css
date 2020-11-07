@@ -1,9 +1,12 @@
-.grid {
+.fluid-grid {
    margin: 5rem;
+   height: 75vh;
 
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
-   align-items: flex-end;
+   flex-basis: 0;
+   align-items: flex-start;
    justify-content: space-between;
    align-content: space-between;
 }

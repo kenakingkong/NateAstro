@@ -14,9 +14,9 @@ const Summary = ({}) => (
          }
       `}
       render={data => (
-            <p className="text-regular">
-               {data.site.siteMetadata.summary}
-            </p>
+         <p className="text-regular">
+            {data.site.siteMetadata.summary}
+         </p>
       )}
    />
 )

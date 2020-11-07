@@ -18,7 +18,7 @@ const Social = () => (
          }
       `}
       render={data => (
-         <div>
+         <div className="paragraph">
             <p className="text-regular">
                Let's be friends!
             </p>

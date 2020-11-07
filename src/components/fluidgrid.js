@@ -2,7 +2,7 @@ import React from "react"
 import "./css/fluidgrid.css"
 
 const FluidGrid = ({ one, two, three }) => (
-   <div className="grid">
+   <div className="fluid-grid">
       {one}
       {two}
       {three}

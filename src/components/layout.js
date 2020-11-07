@@ -1,14 +1,16 @@
 import { StaticQuery, graphql } from "gatsby"
-import React from "react"
+import React  from "react"
 import {Helmet} from 'react-helmet'
 import Header from './header'
 import Footer from './footer'
 import BoxImage from "../components/boximage"
 import Name from "../components/name"
+import { Media } from "../media"
 
 import './css/layout.css'
 
 const Layout = ({children}) => {
+   const isHome = '/' === window.location.pathname;
    return (
       <StaticQuery 
          query={graphql`
@@ -48,11 +50,24 @@ const Layout = ({children}) => {
                   menuLinks={data.site.siteMetadata.menuLinks} 
                />
                <main>
-                  <div className="fluid">
+                  {/* Tablet/Desktop */}
+                  <Media greaterThan="xs">
+                     <div className="container">
                      <BoxImage />
-                     {children}
-                  </div>
-                  <Name name={data.site.siteMetadata.name}/>
+                     <div className="fluid">
+                        {children}
+                     </div>
+                     <Name name={data.site.siteMetadata.name}/>
+                     </div>
+                  </Media>
+                  {/* Mobile */}
+                  <Media at="xs">
+                     {isHome && <BoxImage />}
+                     <div className="fluid">
+                        {children}
+                     </div>
+                     {isHome && <Name name={data.site.siteMetadata.name} />}
+                  </Media>
                </main>
                <Footer 
                   email={data.site.siteMetadata.email}

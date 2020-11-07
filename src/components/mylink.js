@@ -2,11 +2,10 @@ import React from "react"
 import './css/link.css'
 
 const MyLink = ({ link, name }) => (
-   <a 
-   className="link"
-   target="_blank"
-   href={link}
-   >
+   <a className="link"
+      target="_blank"
+      href={link}
+      >
       {name}
    </a>
 )

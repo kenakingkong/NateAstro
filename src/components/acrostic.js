@@ -19,7 +19,8 @@ const Acrostic = ({}) => (
                   let first = line.charAt(0)
                   let rest = line.substring(1)
                   return (
-                     <li className="listitem">
+                     <li key={line}
+                        className="listitem">
                         <span className="text-largest">{first}</span>
                         <span className="text-larger">{rest}</span>
                      </li>
