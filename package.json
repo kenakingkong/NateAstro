@@ -15,7 +15,12 @@
   },
   "dependencies": {
     "@artsy/fresnel": "^1.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
     "gatsby": "^2.25.2",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "react": "^16.14.0",

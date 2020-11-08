@@ -1,12 +1,10 @@
 .fluid-grid {
-   margin: 5rem;
-   height: 75vh;
+   margin: 2vh 2vw;
+   min-width: 40vw;
+   min-height: 75vh;
 
    display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   flex-basis: 0;
+   flex-flow: column wrap;
    align-items: flex-start;
-   justify-content: space-between;
-   align-content: space-between;
+   justify-content: space-around;
 }

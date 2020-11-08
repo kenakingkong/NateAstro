@@ -7,11 +7,10 @@
 module.exports = {
   siteMetadata: {
     title: `Collected Poems by Thomas Kaar`,
-    description: `Thomas Kaar writes poems that reflect the frenetic chaos of these times.`,
+    description: `Thomas Kaar writes poetry reflecting on times of transition and security.`,
     keywords: `poetry, thomas kaar, collected poems, Nate Astro`,
     siteURL: `http://localhost:8000`,
     name: "Thomas Kaar",
-    email: `thomkaar@gmail.com`,
     menuLinks: [
       {
         name: 'home',
@@ -28,15 +27,19 @@ module.exports = {
     ],
     socialLinks: [
       {
+        name: 'Email',
+        link: 'mailto:thomkaar@gmail.com',
+      },
+      {
         name: 'Medium',
-        link: 'https://www.medium.com/@thomkaar'
+        link: 'https://www.medium.com/@thomkaar',
       },
       {
         name: 'Twitter',
-        link: 'https://www.twitter.com/thomkaar'
+        link: 'https://www.twitter.com/thomkaar',
       }
     ],
-    summary : `I’m Thomas Nathaniel Kaar, Nate Astro, Tommy, and Thommy. I write poetry and code.`,
+    summary : `I’m Thomas Nathaniel Kaar, Nate Astro, Tommy, and Thommy. I write poetry reflecting on times of transition and security.`,
     acrostic: [
       "Tommy", "Hates", "O...acrostics.", "Meat isn't", "Always", "Sustainable"
     ],
@@ -50,6 +53,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {

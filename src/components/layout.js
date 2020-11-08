@@ -2,7 +2,7 @@ import { StaticQuery, graphql } from "gatsby"
 import React  from "react"
 import {Helmet} from 'react-helmet'
 import Header from './header'
-import Footer from './footer'
+import FluidGrid from './fluidgrid'
 import BoxImage from "../components/boximage"
 import Name from "../components/name"
 import { Media } from "../media"
@@ -25,14 +25,17 @@ const Layout = ({children}) => {
                         name
                         link
                      }
-                     email
-                     siteURL
+                     socialLinks {
+                        name
+                        link
+                     }
                   }
                }
             }
          `}
          render={data => (
             <React.Fragment>
+
                <Helmet
                   title={data.site.siteMetadata.siteTitle}
                   meta={[
@@ -46,32 +49,33 @@ const Layout = ({children}) => {
                      }
                   ]} 
                />
+               
                <Header 
                   menuLinks={data.site.siteMetadata.menuLinks} 
+                  socialLinks={data.site.siteMetadata.socialLinks}
                />
+
                <main>
                   {/* Tablet/Desktop */}
-                  <Media greaterThan="xs">
+                  <Media greaterThan="sm">
                      <div className="container">
-                     <BoxImage />
-                     <div className="fluid">
-                        {children}
-                     </div>
-                     <Name name={data.site.siteMetadata.name}/>
+                        <BoxImage />
+                        <FluidGrid>
+                           {children}
+                        </FluidGrid>
+                        <Name name={data.site.siteMetadata.name}/>
                      </div>
                   </Media>
                   {/* Mobile */}
-                  <Media at="xs">
+                  <Media lessThan="md">
                      {isHome && <BoxImage />}
-                     <div className="fluid">
-                        {children}
-                     </div>
+                     <FluidGrid>
+                           {children}
+                        </FluidGrid>
                      {isHome && <Name name={data.site.siteMetadata.name} />}
                   </Media>
                </main>
-               <Footer 
-                  email={data.site.siteMetadata.email}
-               />
+
             </React.Fragment>
          )}
       />

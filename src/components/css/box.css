@@ -1,18 +1,21 @@
 .box {
-   margin: 5rem;
-   margin-right: 10vw;
+   margin: 5vh 2vw;
+   z-index: -5;
 }
 
 .box-outline {
    border: solid 5px #4A0D4A;
    background: transparent;
-   height: 60vh;
-   width: 300px
+   max-width: 450px;
+   width: 45vw;
+   height: auto;
+   margin: 0
 }
 
 .box-image {
    z-index: 2;
-   transform: translate(5rem, 5rem);
-   height: 60vh;
+   transform: translate(8vw, 5vh);
+   max-height: 60vh;
+   height: calc(100vh - 10vw);
    width: auto
 }

@@ -1,11 +1,9 @@
 import React from "react"
 import "./css/fluidgrid.css"
 
-const FluidGrid = ({ one, two, three }) => (
+const FluidGrid = ({children}) => (
    <div className="fluid-grid">
-      {one}
-      {two}
-      {three}
+      {children}
    </div>
 )
 

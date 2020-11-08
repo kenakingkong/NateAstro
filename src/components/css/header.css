@@ -1,15 +1,30 @@
-.navlist {
+nav {
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 98vw;
+}
+
+.navleft {
+   display: flex;
+   justify-content: flex-start;
+}
+.navright {
+   display: flex;
+   justify-content: flex-end;
+}
+
+ul {
    margin: 0;
    padding: 0;
-   display: flex;
-   flex: 1
 }
 
 .navitem {
    list-style-type: none;
-   padding: 0 1rem;
+   padding: 0 0.75rem;
    font-family: Bowlby One;
-   font-size: calc(25px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   font-size: calc(18px + (25 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .navlink {

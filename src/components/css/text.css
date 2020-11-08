@@ -35,26 +35,34 @@ header {
 }
 
 .text-vertical {
-   transform: rotate(270deg) translateY(16vw);
+   transform: rotate(270deg);
+   float: right;
    color: #398FC7;
    font-family: Bowlby One;
    font-size: calc(55px + (75 - 25) * ((100vw - 300px) / (1600 - 300)));
+   white-space: nowrap;
    z-index: 5;
-   position: absolute;
    margin: 0;
+}
+
+.blue,
+.purple {
+   position: fixed;
+   right: 0;
+   margin: 0;
+   
 }
 
 .blue {
    color: #398FC7;
    z-index: 1;
-   margin: 0;
-   transform: translateY(9vw);
+   transform: translate(49vh, -6vw);
 }
 
 .purple {
    color:#4A0D4A;
    z-index: 2; 
-   margin: 0; 
+   transform: translate(51vh, -6.5vw);
 }
 
 .liststyle {
