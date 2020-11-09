@@ -8,4 +8,5 @@
 
 .link:hover {
    text-decoration: line-through solid #398FC7;
+   color: #398FC7
 }

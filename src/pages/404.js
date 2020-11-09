@@ -1,14 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
 const NotFound = () => {
   return (
     <Layout>
-      <h1>Page not found</h1>
-      <p>
-        <Link to="/">Head home</Link>
-      </p>
+      <h1>I'm not sure what page you were looking for and why you were looking for it ... because it doesn't seem to exist???/???</h1>
     </Layout>
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import './css/box.css'
 
-const BoxImage = ({}) => (
+const BoxImage = () => (
    <StaticQuery 
       query={graphql`
          query SuitTommyQuery {

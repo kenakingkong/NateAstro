@@ -1,6 +1,6 @@
 .fluid-grid {
-   margin: 2vh 2vw;
-   min-width: 40vw;
+   margin: 1vh 4vw;
+   margin-right: 8vw;
    min-height: 75vh;
 
    display: flex;

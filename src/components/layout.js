@@ -34,7 +34,7 @@ const Layout = ({children}) => {
             }
          `}
          render={data => (
-            <React.Fragment>
+            <>
 
                <Helmet
                   title={data.site.siteMetadata.siteTitle}
@@ -58,25 +58,22 @@ const Layout = ({children}) => {
                <main>
                   {/* Tablet/Desktop */}
                   <Media greaterThan="sm">
-                     <div className="container">
+                     <div className="my-container">
                         <BoxImage />
-                        <FluidGrid>
-                           {children}
-                        </FluidGrid>
+                        <FluidGrid>{children}</FluidGrid>
                         <Name name={data.site.siteMetadata.name}/>
                      </div>
                   </Media>
+
                   {/* Mobile */}
                   <Media lessThan="md">
                      {isHome && <BoxImage />}
-                     <FluidGrid>
-                           {children}
-                        </FluidGrid>
+                     {!isHome && <FluidGrid>{children}</FluidGrid>}
                      {isHome && <Name name={data.site.siteMetadata.name} />}
                   </Media>
                </main>
 
-            </React.Fragment>
+            </>
          )}
       />
    )

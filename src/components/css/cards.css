@@ -1,0 +1,51 @@
+a, p {
+   color:#4A0D4A;
+   font-family: Noto Serif;
+
+}
+
+.cardbox {
+   display: flex;
+   flex: 1;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   height: 100%;
+
+}
+
+.cardmain {
+   flex: 3;
+   overflow-y: scroll;
+}
+
+.cardtitle {
+   font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+   font-weight: bolder;
+}
+
+.cardcontent {
+   font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.cardfooter {
+   margin: 2vh 0 0 0 ;
+   display: inline;
+}
+
+.carddate {
+   font-size: calc(12px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
+   margin: 0;
+   float: left
+}
+
+.cardlink {
+   font-size: calc(12px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
+   margin: 0;
+   float: right;
+   text-decoration: none;
+}
+
+.cardlink:hover {
+   text-decoration: line-through solid #398FC7;
+   color: #398FC7
+}

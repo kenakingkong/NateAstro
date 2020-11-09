@@ -61,7 +61,14 @@ module.exports = {
           families: ['Bowlby One', 'Noto Serif']
         }
       }
+    },
+    {
+      resolve: 'gatsby-medium-rss-feed',
+      options: {
+        nodeType: 'sourceNodes',
+        name: 'MediumFeed',
+        userName: 'ThomKaar'
+      }
     }
-
   ]
 }

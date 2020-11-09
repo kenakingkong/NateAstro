@@ -1,6 +1,7 @@
 .box {
-   margin: 5vh 2vw;
    z-index: -5;
+   margin: 1vh 1vw;
+   float: left
 }
 
 .box-outline {
@@ -9,7 +10,8 @@
    max-width: 450px;
    width: 45vw;
    height: auto;
-   margin: 0
+   margin: 0;
+   margin-right: 0
 }
 
 .box-image {

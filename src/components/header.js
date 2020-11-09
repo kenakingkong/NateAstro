@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import MyLink from './mylink'
-import {iconMedium, iconTwitter, iconEnvelope} from './icons' 
+import {IconMedium, IconTwitter, IconEnvelope} from './icons' 
 import './css/header.css';
 
 const icons = {
-  "Medium": iconMedium,
-  "Twitter": iconTwitter,
-  "Email": iconEnvelope
+  "Medium": IconMedium,
+  "Twitter": IconTwitter,
+  "Email": IconEnvelope
 }
 
 const Header = ({ menuLinks, socialLinks }) => (

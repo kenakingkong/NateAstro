@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import './css/text.css'
 
-const Acrostic = ({}) => (
+const Acrostic = () => (
    <StaticQuery 
       query={graphql`
          query Acrostic {
