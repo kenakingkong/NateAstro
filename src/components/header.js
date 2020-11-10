@@ -10,7 +10,7 @@ const icons = {
   "Email": IconEnvelope
 }
 
-const Header = ({ menuLinks, socialLinks }) => (
+const Header = ({ path, menuLinks, socialLinks }) => (
   <header>
     <nav>
       {/** page links */}
@@ -22,7 +22,7 @@ const Header = ({ menuLinks, socialLinks }) => (
           >
             <Link 
               className={`navlink 
-              ${window.location.pathname === link.link && "activelink"}`} 
+              ${path === link.link && "activelink"}`} 
               to={link.link}
             >
               {link.name}

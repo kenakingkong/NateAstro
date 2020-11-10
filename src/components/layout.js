@@ -35,7 +35,6 @@ const Layout = ({path, children}) => {
          `}
          render={data => (
             <>
-
                <Helmet
                   title={data.site.siteMetadata.siteTitle}
                   meta={[
@@ -51,6 +50,7 @@ const Layout = ({path, children}) => {
                />
                
                <Header 
+                  path={path}
                   menuLinks={data.site.siteMetadata.menuLinks} 
                   socialLinks={data.site.siteMetadata.socialLinks}
                />
