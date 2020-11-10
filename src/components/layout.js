@@ -9,8 +9,8 @@ import { Media } from "../media"
 
 import './css/layout.css'
 
-const Layout = ({children}) => {
-   const isHome = '/' === window.location.pathname;
+const Layout = ({path, children}) => {
+   const isHome = '/' === path;
    return (
       <StaticQuery 
          query={graphql`

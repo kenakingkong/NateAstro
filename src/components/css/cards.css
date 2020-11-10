@@ -15,7 +15,11 @@ a, p {
 
 .cardmain {
    flex: 3;
+   overflow-x: hidden;
    overflow-y: scroll;
+   scroll-behavior: smooth;
+   scrollbar-width: thin;
+   scrollbar-color: #fefefe;
 }
 
 .cardtitle {
@@ -49,3 +53,22 @@ a, p {
    text-decoration: line-through solid #398FC7;
    color: #398FC7
 }
+
+
+/*SCROLLBAR STYLES*/
+
+.cardmain::-webkit-scrollbar {
+   width: 1rem;
+ }
+
+.cardmain::-webkit-scrollbar-track {
+   background: #eee;
+ }
+
+.cardmain::-webkit-scrollbar-thumb {
+   background-color:  #398FC7;
+   border-radius: .25rem;
+   background:  #398FC7;
+   border: 1px solid  #398FC7;
+   height: 5rem;
+ }

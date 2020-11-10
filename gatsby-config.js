@@ -69,6 +69,13 @@ module.exports = {
         name: 'MediumFeed',
         userName: 'ThomKaar'
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: 'poems-by-thomas-kaar',
+          region: 'us-east-2'
+      },
+  },
   ]
 }

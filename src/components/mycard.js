@@ -19,7 +19,7 @@ export const MyCard = ({poem}) => (
             <p 
                className="cardcontent" 
                dangerouslySetInnerHTML={{ 
-                  __html: poem.content.replace(/?(<figure>)+.(<\/figure>)g/,"")
+                  __html: poem.content.replace(/<img .*?>/g,"")
                }} 
             />
          </div>
@@ -39,7 +39,7 @@ export const MyCard = ({poem}) => (
          </div>
       </div>
    </Card>
- );
+);
 
  export const MyEndCard = () => (
    <div className="cardbox">
