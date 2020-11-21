@@ -1,6 +1,12 @@
 @import "./variables";
 
+*{
+  cursor: url("https://poems-by-thomas-kaar.s3.us-east-2.amazonaws.com/tommy_wine_head.png"), auto
+}
+
 body {
   font: 100% $font-stack;
   color: $black;
+  cursor: url("https://poems-by-thomas-kaar.s3.us-east-2.amazonaws.com/tommy_wine_head.png"), auto
+
 }

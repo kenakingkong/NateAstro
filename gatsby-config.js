@@ -47,7 +47,7 @@ module.exports = {
       {
         name: `Suit Tommy`,
         alt: `Tommy in a suit drinking red wine.`,
-        url: `https://firebasestorage.googleapis.com/v0/b/personal-site-fcbfd.appspot.com/o/tommy_wine.png?alt=media&token=73f5e1b9-9c7a-411d-a3c7-c4972241c1c7`
+        url: `https://poems-by-thomas-kaar.s3.us-east-2.amazonaws.com/tommy_wine.png`
       }
     ]
   },
