@@ -7,7 +7,7 @@ import BoxImage from "../components/boximage"
 import Name from "../components/name"
 import { Media } from "../media"
 
-import './css/layout.css'
+import '../scss/layout.scss'
 
 const Layout = ({path, children}) => {
    const isHome = '/' === path;

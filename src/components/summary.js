@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import './css/text.css'
+import '../scss/text.scss'
 
 const Summary = () => (
    <StaticQuery 
@@ -14,7 +14,7 @@ const Summary = () => (
          }
       `}
       render={data => (
-         <p className="text-regular">
+         <p className="text-purple text-regular">
             {data.site.siteMetadata.summary}
          </p>
       )}

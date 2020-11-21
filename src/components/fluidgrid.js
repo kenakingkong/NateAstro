@@ -1,5 +1,5 @@
 import React from "react"
-import "./css/fluidgrid.css"
+import "../scss/fluidgrid.scss"
 
 const FluidGrid = ({children}) => (
    <div className="fluid-grid">

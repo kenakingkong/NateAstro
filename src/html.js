@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { mediaStyles } from "./media"
+import './scss/styles.scss'
 
 export default function HTML(props) {
   return (

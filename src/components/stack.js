@@ -19,14 +19,11 @@ const Stack = () => (
          }
       `}
       render={poems => (
-         <>
-            {/*<p>{poems.allMakena.totalCount}</p>*/}
-            <CardWrapper addEndCard={() => <MyEndCard />}>
-               {poems.allMediumFeed.nodes.map(poem => (
-                  <MyCard poem={poem} />
-               ))}
-            </CardWrapper>
-         </>
+         <CardWrapper addEndCard={() => <MyEndCard />}>
+            {poems.allMediumFeed.nodes.map(poem => (
+               <MyCard poem={poem} />
+            ))}
+         </CardWrapper>
       )}
    />
 )

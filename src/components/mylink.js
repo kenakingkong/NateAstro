@@ -1,5 +1,5 @@
 import React from "react"
-import './css/link.css'
+import '../scss/link.scss'
 
 const MyLink = ({ link, child }) => (
    <a 

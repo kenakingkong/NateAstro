@@ -1,11 +1,13 @@
 import React from 'react';
 import { Card } from 'react-swipeable-cards';
 import {IconMedium} from './icons' 
-import './css/cards.css'
+import '../scss/cards.scss'
 
 const cardstyle = {
    border: 'solid 4px #398FC7',
-   padding: '2rem',
+   padding: '5%',
+   maxWidth: '70vw',
+   width: 'auto'
 }
 
 export const MyCard = ({poem}) => (
@@ -13,28 +15,27 @@ export const MyCard = ({poem}) => (
       key={poem.title} 
       style={cardstyle}
    >
-      <div className="cardbox">
-         <div className="cardmain">
-            <p className="cardtitle">{poem.title}</p>
+      <div className="card-box">
+         <div className="card-main">
+            <p className="card-title">{poem.title}</p>
             <p 
-               className="cardcontent" 
+               className="card-content" 
                dangerouslySetInnerHTML={{ 
                   __html: poem.content.replace(/<img .*?>/g,"")
                }} 
             />
          </div>
       
-         <div className="cardfooter">
-            <p className="carddate">
+         <div className="card-footer">
+            <p className="card-date">
                written {poem.date} 
             </p>
             <a 
-               className="cardlink" 
+               className="card-link" 
                href={poem.link} 
                target="_blank"
                rel="noreferrer">
-               original post &nbsp;
-               {IconMedium}
+               original post &nbsp; {IconMedium}
             </a>
          </div>
       </div>
@@ -42,12 +43,12 @@ export const MyCard = ({poem}) => (
 );
 
  export const MyEndCard = () => (
-   <div className="cardbox">
-      <div className="cardmain">
-         <p className="cardcontent">
+   <div className="card-box">
+      <div className="card-main">
+         <p className="card-content">
             Congrats for getting through all my poems!!! woo hoo
          </p>
-         <p className="cardcontent">
+         <p className="card-content">
             Click here to start over.
          </p>
       </div>

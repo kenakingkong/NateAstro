@@ -1,0 +1,25 @@
+@import "./variables";
+
+.box {
+   z-index: -5;
+   margin: 1vh 1vw;
+   float: left;
+
+   &-outline {
+      border: solid 5px $purple;
+      background: transparent;
+      max-width: 450px;
+      width: 45vw;
+      height: auto;
+      margin: 0;
+      margin-right: 0
+   }
+   
+   &-image {
+      z-index: 2;
+      transform: translate(8vw, 5vh);
+      max-height: 60vh;
+      height: calc(100vh - 10vw);
+      width: auto
+   }
+}

@@ -1,0 +1,14 @@
+@import "./variables";
+
+.link {
+   color: $purple;
+   text-decoration: none;
+   font-family: $font-bowlby;
+   font-size: calc(18px + (25 - 12) * ((100vw - 300px) / (1600 - 300)));
+   padding: 0 0 0 0.25rem;
+
+   &:hover {
+      text-decoration: line-through solid $blue;
+      color: $blue
+   }
+}

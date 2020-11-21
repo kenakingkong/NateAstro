@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import MyLink from './mylink'
 import {IconMedium, IconTwitter, IconEnvelope} from './icons' 
-import './css/header.css';
+import '../scss/header.scss';
 
 const icons = {
   "Medium": IconMedium,
@@ -12,16 +12,17 @@ const icons = {
 
 const Header = ({ path, menuLinks, socialLinks }) => (
   <header>
-    <nav>
+    <nav className="nav">
+      
       {/** page links */}
-      <ul className="navleft">
+      <ul className="nav-left">
         {menuLinks.map(link => (
           <li
             key={link.name}
-            className="navitem"
+            className="nav-item"
           >
             <Link 
-              className={`navlink 
+              className={`nav-link 
               ${path === link.link && "activelink"}`} 
               to={link.link}
             >
@@ -32,11 +33,11 @@ const Header = ({ path, menuLinks, socialLinks }) => (
       </ul>
 
       {/** social links */}
-      <ul className="navright">
+      <ul className="nav-right">
         {socialLinks.map(link => (
            <li
               key={link.name}
-              className="navitem"
+              className="nav-item"
             >
                 <MyLink 
                   link={link.link} 

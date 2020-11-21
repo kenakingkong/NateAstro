@@ -1,0 +1,47 @@
+@import "./variables";
+
+.nav {
+   display: flex;
+   flex: 1;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 100%;
+   padding-right: 5vw;
+
+   &-left {
+      display: flex;
+      justify-content: flex-start;
+   }
+
+   &-right {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &-item {
+      list-style-type: none;
+      padding: 0 0.75rem;
+      font-family: $font-bowlby;
+      font-size: calc(18px + (25 - 12) * ((100vw - 300px) / (1600 - 300)));
+   }
+
+   &-link {
+      color: $purple;
+      font-family: $font-bowlby;
+      text-decoration: none;
+   }
+
+   &-link:hover {
+      text-decoration: line-through solid $blue;
+   }
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+.activelink {
+   color: $blue;
+   text-decoration: underline;
+}

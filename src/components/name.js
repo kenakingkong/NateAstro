@@ -1,10 +1,10 @@
 import React from "react"
-import './css/text.css'
+import '../scss/text.scss'
 
 const Name = ({name}) => ( 
    <div className="text-vertical">
-      <p className="blue">{name}</p>
-      <p className="purple">{name}</p>
+      <p className="text-blue text-vertical-bottom">{name}</p>
+      <p className="text-purple text-vertical-top">{name}</p>
    </div>
 )
 
