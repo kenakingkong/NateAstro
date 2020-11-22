@@ -30,22 +30,16 @@ a, p {
    }
    
    &-content {
-      font-size: calc(16px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      font-size: calc(16px + (18 - 8) * ((100vw - 300px) / (1600 - 300)));
+      margin-right: 2rem;
    }
    
    &-footer {
-      margin: 2vh 0 0 0 ;
+      margin: 1vh 0 0 0 ;
       display: inline;
+      font-size: calc(8px + (18 - 6) * ((100vw - 300px) / (1600 - 300)));
    }
-   
-   &-date {
-      font-size: calc(12px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
-      margin: 0;
-      float: left
-   }
-   
    &-link {
-      font-size: calc(12px + (22 - 10) * ((100vw - 300px) / (1600 - 300)));
       margin: 0;
       float: right;
       text-decoration: none;
@@ -58,7 +52,7 @@ a, p {
    
    /*SCROLLBAR STYLES*/
    &-main::-webkit-scrollbar {
-      width: 0.6rem;
+      width: 0.6rem;     
     }
    
    &-main::-webkit-scrollbar-track {

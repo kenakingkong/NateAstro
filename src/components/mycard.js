@@ -5,7 +5,7 @@ import '../scss/cards.scss'
 
 const cardstyle = {
    border: 'solid 4px #398FC7',
-   padding: '5%',
+   padding: '5% 2.5% 2.5% 5% ',
    maxWidth: '70vw',
    width: 'auto'
 }
@@ -21,21 +21,18 @@ export const MyCard = ({poem}) => (
             <p 
                className="card-content" 
                dangerouslySetInnerHTML={{ 
-                  __html: poem.content.replace(/<img .*?>/g,"")
+                  __html: poem.content.replace(/<figure.+figure>/g,"")
                }} 
             />
          </div>
       
          <div className="card-footer">
-            <p className="card-date">
-               written {poem.date} 
-            </p>
             <a 
                className="card-link" 
                href={poem.link} 
                target="_blank"
                rel="noreferrer">
-               original post &nbsp; {IconMedium}
+               "{poem.title}", {poem.date} &emsp; {IconMedium}
             </a>
          </div>
       </div>
