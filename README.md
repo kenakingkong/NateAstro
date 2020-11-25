@@ -17,8 +17,8 @@ npm run build && npm run deploy
 ## Links
 [![Site]](http://poems-by-thomas-kaar.s3-website.us-east-2.amazonaws.com/)
 
-[![Designing the App]]()
+[![Designing the App]](https://medium.com/@makenakong/case-study-designing-a-unique-poetry-reading-experience-8c858b92133b)
 
-[![Developing the App]]()
+[![Developing the App]](https://medium.com/@makenakong/building-a-poetry-site-with-gatsby-and-a-medium-feed-a481951855a0)
 
 [![Dev Help]](./README_GATSBY.md)
