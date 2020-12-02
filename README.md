@@ -1,1 +1,1 @@
-# NateAstro
+Check out the master branch
