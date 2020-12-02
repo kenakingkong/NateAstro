@@ -10,34 +10,40 @@ const cardstyle = {
    width: 'auto'
 }
 
+const onSwipe = (data) => {
+   console.log("swiped")
+   console.log(data)
+}
+
 export const MyCard = ({poem}) => (
    <Card 
-      key={poem.title} 
-      style={cardstyle}
-   >
-      <div className="card-box">
-         <div className="card-main">
-            <p className="card-title">{poem.title}</p>
-            <p 
-               className="card-content" 
-               dangerouslySetInnerHTML={{ 
-                  __html: poem.content.replace(/<figure.+figure>/g,"")
-               }} 
-            />
+         key={poem.title} 
+         style={cardstyle}
+         data={poem}
+      >
+         <div className="card-box">
+            <div className="card-main">
+               <p className="card-title">{poem.title}</p>
+               <p 
+                  className="card-content" 
+                  dangerouslySetInnerHTML={{ 
+                     __html: poem.content.replace(/<figure.+figure>/g,"")
+                  }} 
+               />
+            </div>
+         
+            <div className="card-footer">
+               <a 
+                  className="card-link" 
+                  href={poem.link} 
+                  target="_blank"
+                  rel="noreferrer">
+                  "{poem.title}", {poem.date} &emsp; {IconMedium}
+               </a>
+            </div>
          </div>
-      
-         <div className="card-footer">
-            <a 
-               className="card-link" 
-               href={poem.link} 
-               target="_blank"
-               rel="noreferrer">
-               "{poem.title}", {poem.date} &emsp; {IconMedium}
-            </a>
-         </div>
-      </div>
-   </Card>
-);
+      </Card>
+)
 
  export const MyEndCard = () => (
    <div className="card-box">
